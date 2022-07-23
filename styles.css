@@ -1,0 +1,77 @@
+html, body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 475px) {
+  body {
+    margin: 0 auto;
+    max-width: 475px;
+  }
+}
+section {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+section .card {
+  padding: 34px 35px 64px 35px;
+}
+section .card img {
+  width: 100%;
+}
+section .card .first--img {
+  padding-bottom: 7px;
+}
+section .card .second--img {
+  padding-bottom: 17px;
+}
+section .card .third--img {
+  padding-bottom: 8px;
+}
+section .card h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 128.91%;
+  text-align: center;
+  padding-bottom: 26px;
+}
+section .card p {
+  font-weight: 400;
+  font-size: 1.125;
+  line-height: 128.91%;
+  text-align: center;
+}
+section .pagination {
+  width: 70px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 63px;
+}
+section .pagination .point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+section .pagination .point:hover {
+  border: 1px solid #92E3A9;
+  background-color: #92E3A9;
+}
+section .button {
+  font-family: "Poppins", sans-serif;
+  width: 308px;
+  height: 54px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 128.91%;
+  border: none;
+}
+section .continue {
+  background-color: #92E3A9;
+  color: #FFFFFF;
+}
+section .skip {
+  background-color: #FFFFFF;
+  color: #92E3A9;
+}/*# sourceMappingURL=styles.css.map */
