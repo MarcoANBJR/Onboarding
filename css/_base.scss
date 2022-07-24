@@ -2,6 +2,7 @@
 
 html, body {
     font-family: $font;
+    transition: .5s;
     // max-width: 475px;
 }
 
@@ -9,6 +10,13 @@ html, body {
     body {
         margin: 0 auto;
         max-width:475px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    :root {
+        font-size: 14px;
+        transition: .5s;
     }
 }
 
@@ -20,15 +28,9 @@ section {
         padding: 34px 35px 64px 35px;
         img {
             width: 100%;
-        }
-        .first--img {
+            
+            padding-top: 20px;
             padding-bottom: 7px;
-        }
-        .second--img {
-            padding-bottom: 17px;
-        }
-        .third--img {
-            padding-bottom: 8px;
         }
         h1{
             font-weight: 600;
@@ -39,7 +41,7 @@ section {
         }
         p {
             font-weight: 400;
-            font-size: 1.125;
+            font-size: 1.125rem;
             line-height: 128.91%;
             text-align: center;
         }
@@ -52,14 +54,16 @@ section {
         justify-content: space-between;
         padding-bottom: 63px;
         .point {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             border: 1px solid #000000;
+            transition: .5s;
         }
-        .point:hover {
+        .active {
             border: 1px solid $color-green;
             background-color: $color-green;
+            transition: .5s;
         }
     }
 
@@ -68,16 +72,24 @@ section {
         width: 308px;
         height: 54px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 128.91%;
         border: none;
+        box-shadow: 0px 4px 10px 0px #A1C3FC;
+        margin-bottom: 30px;
+        transition: all .5s;
     }
     .continue {
         background-color: $color-green;
         color: $color-white;
     }
     .skip {
+        box-shadow: none;
+
         background-color: $color-white;
         color: $color-green;
+    }
+    .display-none {
+        display: none;
     }
 }
